@@ -2,7 +2,11 @@
 using namespace std;
 int main()
 {
-cout<<"hello upes";
-cout<<"hello dehradun";
+int x=10;
+int &y=x;
+cout<<x<<endl;
+x++;
+y++;
+cout<<y<<endl;
 return 0;
 }
