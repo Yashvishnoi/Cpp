@@ -40,10 +40,15 @@ return 2*(length+breadth);
 int main()
 {
 rectangle r;
-r.setLength(10);
-r.setBreadth(5);
-cout<<r.area();
-cout<<"Length is"<<r.getLength();
+int a,b;//a=length and b=breadth
+cout<<"Enter the length and breadth";
+cin>>a>>b;
+r.setLength(a);
+r.setBreadth(b);
+cout<<"Length is"<<r.getLength()<<endl;
+cout<<"Breadth is"<<r.getBreadth()<<endl;
+cout<<"Area is"<<r.area();
+cout<<"Perimeter is"<<r.perimeter();
 return 0;
 }
 
