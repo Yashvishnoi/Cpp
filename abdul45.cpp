@@ -60,6 +60,7 @@ cin>>a>>b;//a=length&&b=breadth
 rectangle r1(a,b);//first object
 rectangle r2(r1);//2nd object
 cout<<r2.area()<<endl;
+cout<<"Program done";
 return 0;
 }
 
