@@ -4,7 +4,7 @@ using namespace std;
 class basiccar
 {
 public:
-void start()
+virtual void start()
 {
 cout<<"Basic car started";
 }
