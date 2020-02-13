@@ -21,7 +21,6 @@ cout<<"Function of derived ";
 
 int main()
 {
-base *ptr=new derived();//function i is called
 ptr->fun();
 return 0;
 }*/
@@ -48,8 +47,8 @@ cout<<"Function of derived ";
 
 int main()
 {
-base *ptr=new derived();//function i is called
-ptr->fun();
+base *ptr=new derived();
+ptr->fun();//function i is called
 return 0;
 }
 
