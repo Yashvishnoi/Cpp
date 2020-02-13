@@ -1,14 +1,14 @@
 #include<iostream>
 using namespace std;
 
-class shape
+class shape//abstract class
 {
 public:
-virtual float area()=0;
-virtual float perimeter()=0;  
+virtual float area()=0;//pure virtual function
+virtual float perimeter()=0; // must be overwritten by derived class 
 };
 
-class rectangle:public shape
+class rectangle:public shape//derived class
 {
 private:
 int length;
@@ -36,7 +36,7 @@ return 2*(length+breadth);
 }
 };
 
-class circle:public shape
+class circle:public shape//derived class
 {
 private:
 float radius;
@@ -60,10 +60,15 @@ return 2*3.14*radius;
 
 int main()
 {
-shape *p=new rectangle(10,5);
+int q,u,w;
+cout<<"Enter the value of length and breadth"<<endl;
+cin>>q>>u;
+shape *p=new rectangle(q,u);//base class pointer pointing to a derived class object
 cout<<"area of rectangle is "<<p->area()<<endl;
 cout<<"perimeter of circle is "<<p->perimeter()<<endl;
-p=new circle(10);
+cout<<"enter the value of radius"<<endl;
+cin>>w;
+p=new circle(w);
 cout<<"area of circle is"<<p->area()<<endl;
 cout<<"perimeter of circle is "<<p->perimeter()<<endl;
 return 0;
