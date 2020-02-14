@@ -3,11 +3,11 @@ using namespace std;
 class innova
 {
 public:
-static int price;
+static int price;//static member
 innova()
 {
 }
-static int getprice()
+static int getprice()//static function
 {
 return price;
 }
