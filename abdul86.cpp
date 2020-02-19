@@ -27,7 +27,7 @@ return 0;
 using namespace Second;
 int main()
 {
-First::fun();
+First::fun();// if we write like this then first function is called although we write namespace second
 fun();
 return 0;
 }
