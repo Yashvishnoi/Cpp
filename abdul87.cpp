@@ -15,7 +15,8 @@ cout<<"destructor of demo"<<endl;
 };
 void fun()
 {
-demo d;
+//demo d;
+demo *p=new demo();
 }
 int main()
 {
