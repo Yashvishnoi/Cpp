@@ -16,8 +16,8 @@ cout<<"destructor of demo"<<endl;
 void fun()
 {
 //demo d;
-demo *p=new demo();// if you allocate memory dynamically then only constructor is called destructor is not called
-delete p;// for calling a destructor we have to deallocate the memory
+demo *p=new demo(); // if you allocate memory dynamically then only constructor is called destructor is not called
+delete p;          // for calling a destructor we have to deallocate the memory
 }
 int main()
 {
