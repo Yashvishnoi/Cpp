@@ -27,6 +27,6 @@ cout<<"Destructor of derived class is called"<<endl;
 };
 int main()
 {
-derived d;
+derived d;// in this first constructor of base class is called then derived class constructor and in case of destructor first destructor of derived class is called then destructor of base class is called
 return 0;
 }
