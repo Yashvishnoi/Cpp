@@ -3,11 +3,11 @@ using namespace std;
 class base
 {
 public:
-base()
+base()// constructor of base class
 {
 cout<<"Constructor of base class is called"<<endl;
 }
-~base()
+~base()// destructor pof base class
 {
 cout<<"Destructor of base class is called"<<endl;
 }
@@ -16,11 +16,11 @@ cout<<"Destructor of base class is called"<<endl;
 class derived:public base// derived class is inherited from base class
 {
 public:
-derived()
+derived()//constrctor of derived class
 {
 cout<<"Constructor of derived class is called"<<endl;
 }
-~derived()
+~derived()// destructor of base class
 {
 cout<<"Destructor of derived class is called"<<endl;
 }
