@@ -3,7 +3,7 @@
 using namespace std;
 int main()
 {
-ofstream ofs("My.txt");
+ofstream ofs("My.txt");//for writting into a file there is a class available ofstream
 ofs<<"John";
 ofs<<25;
 ofs<<"cs";
