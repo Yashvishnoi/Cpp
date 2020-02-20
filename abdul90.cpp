@@ -7,7 +7,7 @@ base()
 {
 cout<<"Constructor of base class is called"<<endl;
 }
-virtual ~base()// without use of virtual keyword we get O/P only "destructor of base class is called "
+virtual ~base()// without use of virtual keyword we get O/P only "destructor of base class is called " but when we use virtual keyword then first destructor of derived class is called then destructor of base class is called 
 {
 cout<<"Destructor of base class is called"<<endl;
 }
