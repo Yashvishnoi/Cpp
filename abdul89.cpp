@@ -13,7 +13,7 @@ cout<<"Destructor of base class is called"<<endl;
 }
 };
 
-class derived:public base
+class derived:public base// derived class is inherited from base class
 {
 public:
 derived()
