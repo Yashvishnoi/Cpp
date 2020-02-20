@@ -1,5 +1,5 @@
 #include<iostream>
-#include<fstream>
+#include<fstream>// we have to include header file
 using namespace std;
 int main()
 {
