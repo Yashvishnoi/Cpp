@@ -7,7 +7,7 @@ base()
 {
 cout<<"Constructor of base class is called"<<endl;
 }
-~base()
+virtual ~base()// without use of virtual keyword we get O/P only "destructor of base class is called "
 {
 cout<<"Destructor of base class is called"<<endl;
 }
