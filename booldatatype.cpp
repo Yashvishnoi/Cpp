@@ -4,8 +4,8 @@ int main()
 {
   int x1=10,x2=20,x3,m=2;
   bool b1,b2;
-  b1=x1==x2;
-  b2=x1<x2;
+  b1=x1==x2;//false
+  b2=x1<x2;//true
   bool b3=true;
   x3=false+5*m-b3;
   cout<<b1<<"\t";
