@@ -21,17 +21,17 @@ int main()
   cout<<"Enter your branch"<<endl;
   cin>>s1.branch;
 
-  ofstream outfile;
+  ofstream outfile;//open a file in write mode
   outfile.open("student.txt");
-  outfile<<s1.name<<endl;
+  outfile<<s1.name<<endl;//write inputted data into a file
   outfile<<s1.roll;
   outfile<<s1.branch;
 
-  outfile.close();
+  outfile.close();// close the open file
 
-  ifstream infile;
+  ifstream infile;// open a file in read mode
   infile.open("student.txt");
-  infile>>s1.name;
+  infile>>s1.name;// read the data from the file & display
   infile>>s1.roll;
   infile>>s1.branch;
 
@@ -39,7 +39,7 @@ int main()
   cout<<s1.roll<<endl;
   cout<<s1.branch<<endl;
 
-  infile.close();
+  infile.close();// close the opened file
 return 0;
 
 }
