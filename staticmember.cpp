@@ -11,12 +11,12 @@ class rectangle
 
      static int count;
 
-    rectangle(int l,int b,int h)
+    rectangle(int l,int b,int h)// constructor
   {
     length=l;
     breadth=b;
     height=h;
-    count++;
+    count++;//Increase every time object is created
   }
 
   int volume()
@@ -37,6 +37,6 @@ int main()
   rectangle r1(10,1,3);
   cout<<"Volume is "<<r.volume()<<endl;
   cout<<"Volume is "<<r1.volume()<<endl;
-  cout<<rectangle::count<<"\t";
+  cout<<rectangle::count<<"\t";//print total number of object
 return 0;
 }
