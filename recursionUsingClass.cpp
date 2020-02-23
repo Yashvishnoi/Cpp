@@ -24,6 +24,7 @@ return f;
 int main()
 {
   int a,b;
+  cout<<"Enter the number"<<endl;
   cin>>a;
   recursion r(a);
   b=r.function(a);
