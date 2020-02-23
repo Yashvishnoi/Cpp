@@ -1,4 +1,5 @@
 // CAll By POINTER 
+// IT is not a call by reference
 #include<iostream>
 using namespace std;
 void swap(int *a,int *b)
