@@ -5,13 +5,13 @@ class stack
   private:
   int x,y;
   public:
-  stack(int x,int y)
+  stack(int x,int y)// Parameterized constructor
 { 
   this-> x=x;
   this-> y=y;
 }
 
-stack(const stack &p1)
+stack(const stack &p1)// copy constructor General form- className(static className &old_Object)
 {
   x=p1.x;
   y=p1.y;
