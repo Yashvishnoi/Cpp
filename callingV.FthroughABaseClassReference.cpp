@@ -26,7 +26,7 @@ void fun()
 cout<<"This is derived2 class function"<< endl;
 }
 };
-
+//Use a base class reference parameter
 void f(base &r)
 {
 r.fun();
@@ -34,9 +34,9 @@ r.fun();
 
 int main()
 {
-base b;
-derived d1;
-derived2 d2;
+base b;// pass a base class object to f()
+derived d1;// pass a derived class object to f()
+derived2 d2;// pass a derived2 class object f()
 
 f(b);
 f(d1);
