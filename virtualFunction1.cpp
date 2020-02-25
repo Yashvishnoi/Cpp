@@ -32,12 +32,12 @@ base *p,b;
 derived d1;
 derived2 d2;
 p=&b;
-p->fun();
+p->fun();// access base function
 
 p=&d1;
-p->fun();
+p->fun();// access derived function
 
 p=&d2;
-p->fun();
+p->fun();// access derived2 function
 return 0;
 }
