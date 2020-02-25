@@ -1,3 +1,4 @@
+// Pure virtual function
 #include<iostream>
 using namespace std;
 
@@ -7,7 +8,7 @@ protected:
 int val;
 public:
 void setval(int i){val=i;}
-virtual int getval()=0;
+virtual int getval()=0;// getval() is a pure virtual function
 
 };
 
@@ -44,13 +45,13 @@ int main()
 dectype d;
 octtype o;
 hextype h;
-d.setval(10);
+d.setval(10);// displays 10-hexdecimal
 d.getval();
 
-o.setval(10);
+o.setval(10);//display 10 octadecimal
 o.getval();
 
-h.setval(10);
+h.setval(10);// displays 10 hexadecimal
 h.getval();
 
 return 0;
