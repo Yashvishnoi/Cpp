@@ -25,6 +25,7 @@ int main()
 {
 base obj;
 obj.setValue(10,20);
+
 sum(obj);
 cout<<sum(obj)<<endl;
 return 0;
