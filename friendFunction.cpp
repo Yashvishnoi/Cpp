@@ -12,8 +12,10 @@ friend int sum (base n);
  void setValue(int i,int j);
 
 };
+// Sum is not a member function of a class
 int sum(base n)
 {
+ // sum is a friend function so it can directly access a and b
 return n.a+n.b;
 }
 void base::setValue(int i,int j)
