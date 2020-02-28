@@ -28,17 +28,12 @@ void base::setValue(int i,int j)
 }
 int main()
 {
-<<<<<<< HEAD
+
 base obj;
 obj.setValue(10,20);
 
 sum(obj);
 cout<<sum(obj)<<endl;
-=======
- base obj;
- obj.setValue(10,20);
- sum(obj);
- cout<<sum(obj)<<endl;
->>>>>>> ee90d61b8e8a1116085e42e73435ad94e51110f5
+
 return 0;
 }
