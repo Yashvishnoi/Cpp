@@ -15,7 +15,7 @@ class base
 		}
 		void display()
 		{
-			cout<<n<<endl;
+			cout<<"The value of eneterd number "<<n<<endl;
 		}
 	};
 };
@@ -23,8 +23,11 @@ class base
 
 int main()
 {
-base::derived obj;
-obj.getdata(10);
-obj.display();
+	
+	cout<<"Nested class in c++";
+	base::derived obj;
+	obj.getdata(10);
+	obj.display();
+
 return 0;
 }
