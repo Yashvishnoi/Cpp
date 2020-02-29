@@ -19,6 +19,7 @@ void f()
 base temp;
 cout<<"Objects in existance "<<base::a<<endl;
 }
+// temp is destroyed when f() returns 
 
 int base::a;
 int main()
