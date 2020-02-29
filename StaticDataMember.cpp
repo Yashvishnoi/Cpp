@@ -16,7 +16,7 @@ void show();
 
 };
 
-int base::a=0;
+int base::a=0;//define a
 
 void base::show()
 {
@@ -26,10 +26,10 @@ cout<<"Non static data variable b "<<b<<endl;
 
 int main()
 {
-base x(1,1);
+base x(1,1);// set a to 1
 x.show();
-base y(2,2);
+base y(2,2);// set a to 2
 y.show();
-x.show();
+x.show();?// Here a has been changed for x and y because a is shared by both objects
 return 0;
 }
