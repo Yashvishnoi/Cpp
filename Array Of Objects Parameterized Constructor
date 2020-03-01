@@ -1,0 +1,38 @@
+#include<iostream>
+using namespace std;
+class base
+{
+  int x;
+  int y;
+  public:
+  base(int j, int k) 
+  {
+    x=j;
+    y=k;
+  }
+  int getvalue()  
+  {
+    return x;
+  }
+  
+  int getvalue1()  
+  {
+    return y;
+  }
+  
+};
+
+int main()
+{
+  base obj[3]={
+    obj1(20,30)
+    obj2(30,40)
+    obj3(40,50)};
+  int i;
+
+  for( i=0;i<3;i++)
+  {
+    cout<<obj[i].getvalue()<<" "<<obj[i].getvalue1()<<endl;  
+  }
+return 0;
+}
