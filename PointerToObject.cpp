@@ -18,7 +18,8 @@ return x;
 int main()
 {
 base b(20), *p;
- p=&b;
-cout<<p->getvalue()<<endl;
+ p=&b;// get addresss of b
+cout<<p->getvalue()<<endl;// call the function using -> operator
+
 return 0;
 }
