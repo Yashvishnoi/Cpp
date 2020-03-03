@@ -1,5 +1,6 @@
 #include<iostream>
 #include<math.h>
+#include<float.h>// Macro of float and double range
 using namespace std;
 
 class shape
@@ -46,7 +47,7 @@ return PeriCircle;
 
 int main()
 {
-int a,w,z;
+float a,w,z;
 float q;
 shape b;
 a=b.rectangle();
@@ -58,9 +59,15 @@ cout<<w<<endl;
 z=b.circle();
 cout<<z<<endl;
 float s[4]={a,q,w,z};
+float min=FLT_MAX,max=0;
 for(int i=0;i<4;i++)
 {
-
+if(s[i]>max)
+max=s[i];
+else if(s[i]<min)
+min=s[i];
+//cout<<s[i]<<"  ";
 }
+cout<<"Maximum Value is "<<max<<endl<<"Minimum Value is "<<min<<endl;
 return 0;
 }
