@@ -25,8 +25,16 @@ cout<<longitude <<" longitude " <<latitude<<" latitude "<<endl;
 } 
 
 loc operator+(loc obj2);// + operator overloading 
-loc operator =(loc obj2);
-};
+loc operator =(loc obj2);//= operator overloading
+loc operator++();
+}; 
+
+loc loc::operator++()
+{
+longitude++;
+latitude++;
+return *this;//*this return object that generate call
+}
 
 loc loc::operator=(loc obj2)
 {
@@ -48,8 +56,10 @@ int main()
 loc obj1(10,20);
 loc obj2(10,20);
 loc obj3;
-//obj3=obj1+obj2;
-obj3=obj2;
+obj3=obj1+obj2;
+//obj3=obj2;
+obj2=++obj1;
+obj2.display();
 obj3.display();
 return 0;
 }
