@@ -24,7 +24,7 @@ void display()
 cout<<longitude <<" longitude " <<latitude<<" latitude "<<endl;
 } 
 
-loc operator+(loc obj2);// + operator overloading 
+friend loc operator+(loc obj1,loc obj2);// now as a friend 
 loc operator =(loc obj2);//= operator overloading
 loc operator++();
 }; 
@@ -43,11 +43,11 @@ latitude=obj2.latitude;
 return *this;
 }
 
-loc loc::operator+(loc obj2)
+loc operator+(loc obj1,loc obj2)
 {
 loc temp;
-temp.longitude=this->longitude+obj2.longitude;
-temp.latitude=this->latitude+obj2.latitude;
+temp.longitude=obj1.longitude+obj2.longitude;
+temp.latitude=obj1.latitude+obj2.latitude;
 return temp;
 }
 
