@@ -24,7 +24,7 @@ friend loc operator++(loc &obj);
 
 };
 
-loc operator++(loc &obj)
+loc operator++(loc &obj)// Prefix Increment
 {
 obj.longitude++;
 obj.latitude++;
