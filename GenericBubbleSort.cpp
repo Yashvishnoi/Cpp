@@ -8,7 +8,7 @@ int count)// number of items in array
 int a,b;
 T t;
 for(a=1;a<count;a++)
-	for(b=count-1;b<=a;b--)
+	for(b=count-1;b>=a;b--)
 		if(item[b-1]>item[b])
 		{
 			t=item[b-1];
