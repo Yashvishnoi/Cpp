@@ -22,9 +22,13 @@ cout<<"Values of s and g after swapped"<<s<<" "<<g<<"\n";
 swaps(s,g);
 cout<<"Values of s and g after swapped"<<s<<" "<<g<<"\n";
 double q=10.1,w=20.1;
-cout<<"Values of qand wafter swapped"<<q<" "<<w<"\n";
+cout<<"Values of q and w before swapped"<<q<<" "<<w<<"\n";
 swaps(s,g);
 cout<<"Values of q and w after swapped"<<q<<" "<<w<<"\n";
+char r='a',u='b';
+cout<<"Values of r and u after swapped "<<r<<" "<<u<<"\n";
+swaps(r,u);
+cout<<"Values of r and u after swapped "<<r<<" "<<u<<"\n";
 return 0;
 }
 
