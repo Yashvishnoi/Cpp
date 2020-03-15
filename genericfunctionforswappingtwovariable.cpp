@@ -21,6 +21,10 @@ float s=10.1f,g=20.1f;
 cout<<"Values of s and g after swapped"<<s<<" "<<g<<"\n";
 swaps(s,g);
 cout<<"Values of s and g after swapped"<<s<<" "<<g<<"\n";
+double q=10.1,w=20.1;
+cout<<"Values of qand wafter swapped"<<q<" "<<w<"\n";
+swaps(s,g);
+cout<<"Values of q and w after swapped"<<q<<" "<<w<<"\n";
 return 0;
 }
 
