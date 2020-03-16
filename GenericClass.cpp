@@ -15,7 +15,7 @@ Y=x2;
 }
 void show()
 {
-cout<<" "<<X<<" "<<Y<<"\n";
+cout<<" "<<X<<"\n "<<Y<<"\n";
 }
 };
 
@@ -24,6 +24,8 @@ cout<<" "<<X<<" "<<Y<<"\n";
 int main()
 {
 myclass<int,double> obj1(10,10.2);
+myclass<char,char*> obj2('Y',"I Love Budwisier");
 obj1.show();
+obj2.show();
 return 0; 
 }
