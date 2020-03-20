@@ -7,7 +7,7 @@ int main()
 	try//Start a try block
 	{
 		cout<<"Inside the try block"<<endl;
-		throw 100;\\ //Throw an error
+		throw 100;//Throw an error
 		cout<<"This will not execute"<<"\n";
 	}
 
