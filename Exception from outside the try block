@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+void xtest(int test)
+{
+cout<<"Inside xtest : test :: "<<test<<endl;
+if (test) throw test;
+}
+
+
+int main()
+{
+cout<<"Start"<<"\n";
+try// Inside  a try Block
+{
+cout<<"Try block start"<<endl;
+xtest(0);
+xtest(1);
+xtest(2);
+}
+catch(int i)
+{
+cout<<"Catch test is executed -_-_- value is * "<<i<<endl;
+cout<<"End "<<endl;
+}
+return 0;
+}
